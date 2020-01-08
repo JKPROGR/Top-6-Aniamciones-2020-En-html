@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#2F4F4F;
+    overflow: hidden;
+}
+.tiempo{
+    text-align: center;
+    color: white;
+    padding:7px 0px;
+    border:1px solid white;
+    width: 150px;
+    margin:30px auto;
+    border-radius: 20px 20px;
+}
+label{
+    cursor: pointer;
+    padding: 5px;
+    font-family: 'Open Sans', Sans-serif;
+}
+.mensual{
+    
+    width: 200px;
+    border-radius: 10px 10px;
+    
+}
+.anual{
+    
+    width: 200px;
+    border-radius: 10px 10px;
+}
+#mes:checked ~ .mensual{
+    background: #1b2631;
+    
+}
+#año:checked ~ .anual{
+    background: #1b2631;
+}
+
+#año, #mes{
+    display: none;
+}
+/*******************************/
+
+
+.volt1{
+    transform: rotateY(180deg); 
+}
+.volt2{
+    transform: rotateY(180deg); 
+}
+.volt3{
+    transform: rotateY(180deg); 
+}
+/***estilos de las tablas conteinerr***/
+.conteiner {
+   height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-perspective: 800;
+}
+.conteiner-hijo{
+    width: 25%;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 2s;
+    margin: 20px;
+   
+    
+}
+
+.tabla{
+    width: 90%;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 3px 5px 5px #ccc;
+    margin:0 auto
+}
+/*
+.tabla:hover{
+    transform: scale(1.0);
+}*/
+.flex{
+    margin: 20px;
+}
+
+.tabla3{
+    width: 25%;
+  
+    background: white;
+}
+.contenido{
+    padding: 10px;
+    text-align:center;
+    color: #05091c;
+    font-family: 'Open Sans', Sans-serif;
+    cursor: pointer;
+}
+.titulo{
+    font-size: 20px;
+    
+
+}
+.standar{
+    color: #DC143C;
+}
+.standar2{
+    color: #DC143C;
+}
+.mes{
+    font-size: 15px;
+    color: #6495ED;
+}
+.precio{
+    font-size: 40px;
+    margin-bottom: 30px;
+   
+}
+.precio-prof{
+    color: #DC143C;
+}
+.mes-prof{
+    color: #DC143C;
+}
+
+.almacenamiento{
+    background:rgb(135, 153, 165);
+
+}
+
+.sitio-web{
+    background:rgb(135, 153, 165);
+}
+
+.ancho-banda{
+    background:rgb(135, 153, 165);
+    
+}
+.boton{
+    background: rgb(40, 51, 58);
+    display: block;
+    color: #fff;
+    text-decoration:none;
+}
+
+/****estilos de tabla 2****/
+
+.tabla2{
+    width: 25%;
+   
+    background: white;
+}
+.tabla2 .titulo{
+    color: #ec7063;
+}
+.tabla2 .precio{
+color: #DC143C;
+}
+
+.tabla2 .mes{
+    color: #ec7063;
+}
+.tabla2 .boton{
+    background: #ec7063;
+}
+
+
+/***estilos para voltiar la tabla**/
+
+.lado{
+   
+    position:absolute;
+    backface-visibility: hidden;
+}
+
+.atras{
+
+    transform: rotateY(180deg);
+}
+.atras-titulo{
+    color: #333b41;
+}
+.atras-almacenamiento{
+    background:rgb(135, 153, 165);
+
+}
+
+.atras-web{
+    background:rgb(135, 153, 165);
+ 
+}
+
+.atras-banda{
+    background:rgb(135, 153, 165);
+    
+}
+.atras-boton{
+        background: rgb(40, 51, 58);
+    display: block;
+    color: #fff;
+    text-decoration:none;
+}
+@media screen and (max-width:1280px){
+
+    .conteiner-hijo{
+        width: 30%;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: all 2s;
+        margin: 20px;
+     
+        height: 490px;
+    }
+
+}
+
+@media screen and (max-width:1170px){
+
+    .conteiner-hijo{
+        width: 35%;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: all 2s;
+        margin: 20px;
+        height: 490px;
+    }
+
+}
+@media screen and (max-width:1000px){
+
+    .conteiner-hijo{
+        width: 45%;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: all 2s;
+        margin: 20px;
+        height: 490px;
+    }
+
+}
+
+
+@media screen and (max-width:690px){
+
+    .conteiner-hijo{
+        width: 65%;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: all 2s;
+        margin: 20px;
+        height: 490px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    .conteiner-hijo{
+        width: 100%;
+        transform-style: preserve-3d;
+        position: relative;
+        transition: all 2s;
+        margin: 20px;
+        height: 490px;
+    }
+    .conteiner{
+        width: 100%;
+    }
+
+}

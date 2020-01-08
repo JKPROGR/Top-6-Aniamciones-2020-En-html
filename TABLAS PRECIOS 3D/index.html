@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="tiempo">
+      <input type="radio" name="categoria" id="mes" />
+      <label for="mes" class="mensual" onclick="voltiar_cajas();"
+        >Mensual</label
+      >
+      <input type="radio" name="categoria" id="año" />
+      <label for="año" class="anual" onclick="voltiar_cajas();">Anual</label>
+    </div>
+
+    <div class="conteiner">
+        
+        <div class="conteiner-hijo hijo1" id="voltiar1">
+            <div class="tabla flex lado frente">
+              <h1 class="contenido titulo">Basic</h1>
+              <p class="contenido precio">S/65 <span class="mes">/Mes</span></p>
+              <p class="contenido almacenamiento">325MB Almacenamiento</p>
+              <p class="contenido usuario">1 Usuario</p>
+              <p class="contenido sitio-web">1 Sitio Web</p>
+              <p class="contenido dominio">1 Dominio</p>
+              <p class="contenido ancho-banda">Limitado De Ancho De Banda</p>
+              <p class="contenido correos">Limitados Correos</p>
+              <a href="#" class="boton contenido">Ingresar A Plan</a>
+            </div>
+    
+            <div class="tabla flex lado atras">
+              <h1 class="contenido titulo atras-titulo">Basic</h1>
+              <p class="contenido precio atras-titulo">
+                S/326 <span class="mes">/Mes</span>
+              </p>
+              <p class="contenido almacenamiento atras-almacenamiento">
+                256MB Almacenamiento
+              </p>
+              <p class="contenido usuario atras-usuario">1 Usuario</p>
+              <p class="contenido sitio-web atras-web">1 Sitio Web</p>
+              <p class="contenido dominio atras-dominio">1 Dominio</p>
+              <p class="contenido ancho-banda atras-banda">
+                Limitado De Ancho De Banda
+              </p>
+              <p class="contenido correos atras-correo">Limitados Correos</p>
+              <a href="#" class="boton contenido atras-boton">Ingresar A Plan</a>
+            </div>
+          </div>
+
+      <div class="conteiner-hijo hijo2" id="voltiar2">
+        <div class="tabla flex lado frente">
+          <h1 class="contenido titulo standar">Profesional</h1>
+          <p class="contenido precio precio-prof">S/120 <span class="mes mes-prof">/Mes</span></p>
+          <p class="contenido almacenamiento">400MB Almacenamiento</p>
+          <p class="contenido usuario">1 Usuario</p>
+          <p class="contenido sitio-web">1 Sitio Web</p>
+          <p class="contenido dominio">1 Dominio</p>
+          <p class="contenido ancho-banda">Limitado De Ancho De Banda</p>
+          <p class="contenido correos">Limitados Correos</p>
+          <a href="#" class="boton contenido">Ingresar A Plan</a>
+        </div>
+
+        <div class="tabla flex lado atras">
+          <h1 class="contenido titulo atras-titulo standar2">Profesional</h1>
+          <p class="contenido precio precio-prof atras-titulo">
+            S/400 <span class="mes">/Mes</span>
+          </p>
+          <p class="contenido almacenamiento atras-almacenamiento">
+            256MB Almacenamiento
+          </p>
+          <p class="contenido usuario atras-usuario">3 Usuario</p>
+          <p class="contenido sitio-web atras-web">2 Sitio Web</p>
+          <p class="contenido dominio atras-dominio">1 Dominio</p>
+          <p class="contenido ancho-banda atras-banda">
+            Limitado De Ancho De Banda
+          </p>
+          <p class="contenido correos atras-correo">Limitados Correos</p>
+          <a href="#" class="boton contenido atras-boton">Ingresar A Plan</a>
+        </div>
+      </div>
+
+      <div class="conteiner-hijo" id="voltiar3">
+        <div class="tabla flex lado frente">
+          <h1 class="contenido titulo ">Enterprise</h1>
+          <p class="contenido precio">S/170 <span class="mes">/Mes</span></p>
+          <p class="contenido almacenamiento">526MB Almacenamiento</p>
+          <p class="contenido usuario">3 Usuario</p>
+          <p class="contenido sitio-web">4 Sitio Web</p>
+          <p class="contenido dominio">1 Dominio </p>
+          <p class="contenido ancho-banda">Ilimitado De Ancho De Banda</p>
+          <p class="contenido correos">Ilimitados Correos</p>
+          <a href="#" class="boton contenido">Ingresar A Plan</a>
+        </div>
+
+        <div class="tabla flex lado atras">
+          <h1 class="contenido titulo atras-titulo">Enterprise</h1>
+          <p class="contenido precio atras-titulo">
+            S/600 <span class="mes">/Mes</span>
+          </p>
+          <p class="contenido almacenamiento atras-almacenamiento">
+            256MB Almacenamiento
+          </p>
+          <p class="contenido usuario atras-usuario">1 Usuario</p>
+          <p class="contenido sitio-web atras-web">1 Sitio Web</p>
+          <p class="contenido dominio atras-dominio">1 Dominio</p>
+          <p class="contenido ancho-banda atras-banda">
+            Limitado De Ancho De Banda
+          </p>
+          <p class="contenido correos atras-correo">Limitados Correos</p>
+          <a href="#" class="boton contenido atras-boton">Ingresar A Plan</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function voltiar_cajas() {
+        document.getElementById("voltiar1").classList.toggle("volt1");
+        document.getElementById("voltiar2").classList.toggle("volt2");
+        document.getElementById("voltiar3").classList.toggle("volt3");
+      }
+    </script>
+  </body>
+</html>
